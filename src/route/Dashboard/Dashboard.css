@@ -1,0 +1,48 @@
+.dashboard {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .content {
+    margin-left: 250px; /* Espace pour la barre latérale */
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto; /* Barre de défilement verticale si nécessaire */
+  }
+  
+  .top-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligner les cartes en haut */
+    margin-bottom: 20px;
+  }
+  .total-utilisateurs-card {
+    
+    height: 150px;
+  }
+  
+  .charts, .map, .alerts {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+  
+  .chart, .map, .alert {
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .map {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    
+    background-size: cover;
+  }
+
+ 
+  
