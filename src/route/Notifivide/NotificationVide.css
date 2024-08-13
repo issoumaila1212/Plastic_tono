@@ -1,0 +1,78 @@
+.notification-vide-container {
+    position: fixed;
+    top: 50%;
+    left: 60%; /* Ajustement pour déplacer légèrement vers la droite */
+    transform: translate(-50%, -50%);
+    width: 79%; /* Taille élargie du conteneur */
+    max-width: 2000px; /* Largeur maximale du conteneur */
+    min-width: 300px; /* Largeur minimale du conteneur */
+    padding: 20px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+}
+
+.notification-vide-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px 5px 0 0;
+}
+
+.notification-vide-header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.back-button, .trash-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.search-bar {
+    margin: 20px 0;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.kiosque-list {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.kiosque-item {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 5px solid green;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.kiosque-item:hover {
+    background-color: #f9f9f9;
+}

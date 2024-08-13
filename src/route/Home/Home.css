@@ -1,0 +1,103 @@
+.dashboard {
+  position: relative;
+    top: 150px;
+    left: 20px;
+    right: 140px;
+    width: 103%;
+  }
+  
+  .content {
+    margin-left: 250px; /* Espace pour la barre latérale */
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto; /* Barre de défilement verticale si nécessaire */
+  }
+  
+  .top-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligner les cartes en haut */
+    margin-bottom: 10px;
+  }
+  
+  
+  .chart {
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .map-legend {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .map-container {
+    flex: 3;
+    margin-right: 20px; /* Espace entre la carte et la légende */
+    margin-top: 100px; /* Ajout d'une marge supérieure pour descendre la carte */
+}
+  .notifications {
+    display: flex;
+    justify-content: space-between; /* Mettre les notifications côte à côte */
+  }
+  
+  .notification {
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 8px; /* Réduire le padding pour diminuer la taille */
+    margin: 5px;
+    margin-left: 100px; /* Déplace légèrement vers la gauche */
+    margin-top: 90px; /* Augmenter l'espace entre la carte et les notifications */
+  }
+  
+  .notification-icon img {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .notification-content {
+    margin-left: 10px;
+  }
+  
+  .notification-content h4 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .notification-content p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .notification-content .btn {
+    padding: 5px 10px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .notification.red {
+    border-color: red;
+  }
+  
+  .notification.red .btn {
+    background-color: red;
+    color: white;
+  }
+  
+  .notification.green {
+    border-color: green;
+  }
+  
+  .notification.green .btn {
+    background-color: green;
+    color: white;
+  }
+ 

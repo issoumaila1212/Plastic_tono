@@ -1,0 +1,85 @@
+.historique-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 145%; /* Ajuster la largeur */    
+    height: 700px;
+    margin: 20px auto; /* Centrer le conteneur */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* Permettre le défilement horizontal si nécessaire */
+    margin-left: -5%;
+}
+
+.historique-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e7d32; /* Fond vert */
+    padding: 15px;
+    border-radius: 8px 8px 0 0; /* Coins arrondis uniquement en haut */
+    color: white;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.icon {
+    font-size: 1.5em;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-icon {
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.transaction-table th, .transaction-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.transaction-table th {
+    background-color: #ff9800; /* Fond orange pour les en-têtes */
+    color: white;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 40%;
+}
+
+.page-number {
+    margin: 0 5px;
+    padding: 5px 10px;
+    color: orange;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.page-number:hover {
+    background-color: #ff9800; /* Changement de couleur au survol */
+    color: white;
+}

@@ -1,0 +1,54 @@
+.notification {
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: calc(50% - 20px); /* Ajustez cette valeur pour la largeur */
+  box-sizing: border-box;
+}
+
+.notification-icon img {
+  width: 100px; /* Ajustez cette valeur pour changer la taille de l'icône */
+  height: 100px; /* Ajustez cette valeur pour changer la taille de l'icône */
+}
+
+.notification-content {
+  margin-left: 10px;
+}
+
+.notification-content h4 {
+  margin: 0;
+  font-size: 50px;
+}
+
+.notification-content p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.notification-content .btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.notification.red {
+  border-color: red;
+}
+
+.notification.red .btn {
+  background-color: red;
+  color: white;
+}
+
+.notification.green {
+  border-color: green;
+}
+
+.notification.green .btn {
+  background-color: green;
+  color: white;
+}

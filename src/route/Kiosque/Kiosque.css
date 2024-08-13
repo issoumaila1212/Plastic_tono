@@ -1,0 +1,122 @@
+.page-containerk {
+    position: absolute;
+    width: 80% !important;
+    right: 10px;
+    top: 10px;
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.gestion-kiosques-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gestion-kiosques-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.gestion-kiosques-header h1 {
+    font-size: 1.5em;
+    color: white;
+    background-color: #2e7d32;
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
+    flex: 1;
+}
+
+.header-icons {
+    display: flex;
+    gap: 10px; /* Ajouter un espacement entre les icônes */
+}
+
+.header-icons i {
+    font-size: 2em;
+}
+
+.status-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.kiosque-plein, .kiosque-non-plein {
+    padding: 15px 25px; /* Ajuster le padding pour plus de symétrie */
+    border: 2px solid;
+    border-radius: 8px; /* Augmenter le rayon pour des bordures plus arrondies */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.kiosque-plein {
+    border-color: brown;
+    color: brown;
+    background-color: white;
+}
+
+.kiosque-non-plein {
+    border-color: green;
+    color: green;
+    background-color: white;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    width: 60%; /* Ajuster la largeur pour centrer la barre de recherche */
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.kiosques-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    max-height: 300px; /* Limiter la hauteur du tableau pour permettre le défilement */
+    overflow-y: auto; /* Activer le défilement vertical */
+    display: block; /* Pour s'assurer que le tableau est scrollable */
+}
+
+.kiosques-table thead, .kiosques-table tbody {
+    display: table;
+    width: 100%;
+    table-layout: fixed; /* Fixer la largeur des colonnes */
+}
+
+.kiosques-table th, .kiosques-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.kiosques-table th {
+    background-color: #ff9800;
+    color: white;
+    position: sticky;
+    top: 0; /* Garder les en-têtes fixes lors du défilement */
+}
+
+.kiosques-table td {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.kiosques-table td i {
+    font-size: 1.5em;
+    vertical-align: middle; /* Assurer que les icônes sont bien alignées verticalement */
+}

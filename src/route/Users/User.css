@@ -1,0 +1,120 @@
+.page-container {
+    position: relative;
+    top: -120px; /* Ajuster cette valeur pour que le conteneur soit un peu plus bas */
+    width: 180% !important; /* Essayez d'ajuster cette largeur pour remplir l'espace */
+    left: -110px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 0;
+}
+
+.gestion-utilisateurs-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 0; /* Supprime toute marge supérieure */
+}
+
+.gestion-utilisateurs-header {
+    background-color: #2e7d32;
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gestion-utilisateurs-header h1 {
+    font-size: 1.2em; /* Diminuer la taille du titre */
+    margin: 0;
+}
+.gestion-utilisateurs-header i {
+    font-size: 2em; /* Augmenter la taille de l'icône */
+    margin-left: 10px; /* Ajouter un peu d'espace entre le titre et l'icône si nécessaire */
+}
+
+
+.search-filter {
+    display: flex;
+    justify-content: flex-start; /* Alignement à gauche */
+    align-items: center;
+    margin: 10px 0;
+    gap: 10px; /* Espacement entre les éléments */
+}
+
+.search-input {
+    width: 50px; /* Réduire la largeur de la barre de recherche */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.filter-select {
+    width: auto; /* Ajuste la largeur pour s'adapter au contenu */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.filter-button {
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-input {
+    flex: 1;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.filter-select {
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.filter-button {
+    background-color: #ff9800;
+    color: white;
+    cursor: pointer;
+    border: 1px solid #ff9800;
+}
+
+.utilisateurs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.utilisateurs-table th,
+.utilisateurs-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.utilisateurs-table th {
+    background-color: #ff9800;
+    color: white;
+}
+
+.utilisateurs-table td {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.utilisateurs-table td:last-child {
+    text-align: center;
+}
+
+.action-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #4caf50;
+    font-size: 1.2em;
+}

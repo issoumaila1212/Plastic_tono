@@ -1,0 +1,73 @@
+.user-detail-container {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    
+    width: 210%; /* Utiliser 80% de la largeur disponible */
+    right: 30%;
+    margin: 150px auto 20px auto; /* Augmenter la marge en haut pour descendre le conteneur */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* S'assurer que le contenu ne déborde pas */
+    position: relative; /* Pour positionner les éléments de manière absolue à l'intérieur */
+}
+
+.user-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e7d32; /* Fond vert */
+    padding: 10px 15px; /* Ajuster le padding pour rendre l'en-tête plus visible */
+    border-radius: 8px 8px 0 0; /* Coins arrondis seulement en haut */
+    color: white;
+    font-size: 1.8em; /* Taille de texte augmentée */
+    margin-bottom: 20px;
+    position: sticky; /* Fixe l'en-tête en haut lors du défilement */
+    top: 0; /* Fixe l'en-tête en haut de la page */
+    z-index: 1000; /* Assure que l'en-tête reste au-dessus des autres éléments */
+}
+
+.header-icon {
+    font-size: 2em;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ff9800; /* Ajouter une bordure orange */
+}
+
+.user-icon {
+    font-size: 50px; /* Icône plus grande */
+    color: orange;
+    margin-right: 20px;
+    align-self: flex-start; /* Aligner l'icône en haut avec le nom */
+}
+
+.user-details h2 {
+    font-size: 1.4em; /* Texte plus grand pour le nom */
+    margin: 0; /* Supprimer les marges pour un meilleur alignement */
+}
+
+.user-details p {
+    font-size: 1em; /* Texte plus grand pour les détails */
+    margin: 5px; /* Ajouter un peu de marge pour l'espacement */
+}
+
+.recent-actions {
+    border: 2px solid #ff9800; /* Bordure orange qui entoure tout */
+    font-size: 1em; /* Texte plus grand pour les actions */
+    margin-top: 5px;
+}
+
+.action-card {
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px; /* Ajuster le padding pour un meilleur fit */
+    border-radius: 5px;
+    margin-bottom: 10px; /* Ajouter un peu d'espace entre les cartes */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Légère ombre pour les cartes */
+    font-size: 1em; /* Taille du texte */
+}

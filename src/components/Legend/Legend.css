@@ -1,8 +1,11 @@
 .legend {
     background-color: white;
-    padding: 20px;
+    padding: 50px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
   
   .legend h3 {
@@ -16,21 +19,11 @@
   }
   
   .legend-item .icon {
-    width: 20px;
-    height: 20px;
+    width: 30px; /* Ajustez cette valeur pour changer la taille de l'icône */
+    height: 30px; /* Ajustez cette valeur pour changer la taille de l'icône */
     margin-right: 10px;
     display: inline-block;
-  }
-  
-  .icon.operational {
-    background-color: green;
-  }
-  
-  .icon.full {
-    background-color: red;
-  }
-  
-  .icon.maintenance {
-    background-color: orange;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   

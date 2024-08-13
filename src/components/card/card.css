@@ -1,9 +1,9 @@
 .card {
     display: flex;
     align-items: center;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
+    padding: 5px;
+    border-radius: 60px;
+    text-align: right;
     flex: 0 0 auto; /* Ne pas étendre pour remplir la hauteur */
     margin: 0 10px;
   }
