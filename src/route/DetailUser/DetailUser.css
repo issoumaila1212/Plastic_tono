@@ -1,14 +1,19 @@
 .user-detail-container {
     background-color: white;
-    padding: 10px;
+    padding: 20px;
     border-radius: 8px;
-    
-    width: 210%; /* Utiliser 80% de la largeur disponible */
-    right: 30%;
-    margin: 150px auto 20px auto; /* Augmenter la marge en haut pour descendre le conteneur */
+    top: -400px;
+    height: 700px;
+    width: 150%; /* Réduire la largeur pour centrer */
+    margin: 40px auto; /* Centrer horizontalement */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden; /* S'assurer que le contenu ne déborde pas */
-    position: relative; /* Pour positionner les éléments de manière absolue à l'intérieur */
+    
+}
+
+.bordure {
+    border: 2px solid #ff9800; /* Bordure orange */
+    height: 500px;
 }
 
 .user-header {
@@ -16,58 +21,99 @@
     justify-content: space-between;
     align-items: center;
     background-color: #2e7d32; /* Fond vert */
-    padding: 10px 15px; /* Ajuster le padding pour rendre l'en-tête plus visible */
-    border-radius: 8px 8px 0 0; /* Coins arrondis seulement en haut */
-    color: white;
-    font-size: 1.8em; /* Taille de texte augmentée */
-    margin-bottom: 20px;
-    position: sticky; /* Fixe l'en-tête en haut lors du défilement */
-    top: 0; /* Fixe l'en-tête en haut de la page */
-    z-index: 1000; /* Assure que l'en-tête reste au-dessus des autres éléments */
-}
-
-.header-icon {
-    font-size: 2em;
-}
-
-.user-info {
-    display: flex;
-    align-items: center;
-    padding: 20px;
+    padding: 15px 20px;
     border-radius: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ff9800; /* Ajouter une bordure orange */
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.user-details{
+    margin-left: 40px;
 }
 
-.user-icon {
-    font-size: 50px; /* Icône plus grande */
-    color: orange;
+.user-icon,
+.header-icon,
+.action-icon {
+    width: 80px;
+    height: 100px;
     margin-right: 20px;
-    align-self: flex-start; /* Aligner l'icône en haut avec le nom */
 }
 
-.user-details h2 {
-    font-size: 1.4em; /* Texte plus grand pour le nom */
-    margin: 0; /* Supprimer les marges pour un meilleur alignement */
-}
-
-.user-details p {
-    font-size: 1em; /* Texte plus grand pour les détails */
-    margin: 5px; /* Ajouter un peu de marge pour l'espacement */
+.actions-recents {
+    margin-top: 20px;
 }
 
 .recent-actions {
-    border: 2px solid #ff9800; /* Bordure orange qui entoure tout */
-    font-size: 1em; /* Texte plus grand pour les actions */
-    margin-top: 5px;
+    display: flex;
+    justify-content: center; /* Centre les cartes */
+    gap: 20px; /* Ajoute un espace entre les cartes */
+    flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
 }
 
 .action-card {
     background-color: #2e7d32;
     color: white;
-    padding: 10px; /* Ajuster le padding pour un meilleur fit */
-    border-radius: 5px;
-    margin-bottom: 10px; /* Ajouter un peu d'espace entre les cartes */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Légère ombre pour les cartes */
-    font-size: 1em; /* Taille du texte */
+    padding: 10px; /* Réduire le padding pour diminuer la taille des cartes */
+    border-radius: 8px;
+    text-align: center;
+    flex: 1 1 200px; /* Réduit la taille minimale de chaque carte et leur permet de s'étendre */
+    max-width: 250px; /* Limite la largeur des cartes */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 200px;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.action-card.orange {
+    background-color: #ff9800;
+}
+.profile-icon {
+    font-size: 50px;; /* Taille de l'icône */
+    
+    margin-right: 15px; /* Espace entre l'icône et le texte */
+}
+
+.action-card.green {
+    background-color: #2e7d32;
+}
+
+.action-card img {
+    margin-bottom: 10px;
+    max-width: 50px; /* Réduit la taille des images */
+    height: auto;
+}
+.user-info {
+    display: flex;
+    align-items: center; /* Assure que l'icône et le texte sont alignés verticalement */
+    margin-bottom: 20px;
+    padding-top: 20px;
+    margin-left: 40px;
+}
+.profile-icon {
+    font-size: 2.5em; /* Taille de l'icône */
+    color: orange;
+    margin-right: 15px; /* Espace entre l'icône et le texte */
+}
+
+.user-details h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+.action-card img {
+    width: 200px !important; /* Augmentez la largeur de l'image */
+    height: 200px !important; /* Augmentez la hauteur de l'image */
+    margin-bottom: 5px !important;
+}
+
+
+.action-card.orange img {
+    width: 500px; /* Ajustez selon la taille désirée */
+    height: 100px;
+}
+
+.action-card.green img {
+    width: 150px; /* Ajustez selon la taille désirée */
+    height: 100px;
 }

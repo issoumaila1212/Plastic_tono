@@ -1,0 +1,80 @@
+.historique-depots-container {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 180%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    right: 100px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e7d32; /* Couleur verte */
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.header-icon {
+    font-size: 2em;
+    color: white;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-icon {
+    font-size: 50px;
+    color: orange;
+    margin-right: 20px;
+}
+
+.user-details h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.user-details p {
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.depots-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.depots-table th,
+.depots-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.depots-table th {
+    background-color: #ff9800; /* Couleur orange */
+    color: white;
+}
+
+.depots-table td {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.depots-table td:last-child {
+    text-align: center;
+}

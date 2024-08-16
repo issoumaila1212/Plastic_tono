@@ -29,7 +29,7 @@
 .profile-icon {
   font-size: 70px; /* Taille de l'icône de profil */
   color: orange; /* Couleur de l'icône */
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .profile h2 {

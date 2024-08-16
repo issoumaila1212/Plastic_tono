@@ -1,0 +1,75 @@
+.transaction-user-container {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 170%;
+    margin: 20px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    right: 100px;
+}
+
+.transaction-header {
+    background-color: #2e7d32; /* Couleur verte pour l'en-tête */
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-icon {
+    font-size: 2em;
+    color: white;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.user-icon {
+    font-size: 50px; /* Taille spécifiée en pixels */
+    color: orange;
+    margin-right: 10px;
+    width: 50px; /* Ajustement de la largeur */
+    height: 40px; /* Ajustement de la hauteur */
+}
+
+.user-details h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.user-details p {
+    margin: 0;
+    padding-top: 5px; /* Ajuster l'espacement entre les paragraphes */
+    color: #555;
+}
+
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.transaction-table th {
+    background-color: #ff9800;
+    color: white;
+}
+
+.transaction-table td {
+    background-color: #ffffff;
+    color: #333333;
+}

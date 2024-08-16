@@ -10,6 +10,8 @@ import Kiosque from "../route/Kiosque/Kiosque";
 import DetailUser from "../route/DetailUser/DetailUser";
 import HistoriqueTransaction from "../route/HistoriqueTransaction/HistoriqueTransaction";
 import GestionNotification from "../route/GestionNotification/GestionNotification";
+import HistoriqueDepots from "../route/HistoriqueDepots/HistoriqueDepots";
+import TransactionUser from "../route/TransactionUser/TransactionUser";
 
 
 const router=createBrowserRouter(
@@ -53,6 +55,14 @@ const router=createBrowserRouter(
             {
                 path:"gestionnotification",
                 element:<GestionNotification />
+            },
+            {
+                path:"historiquedepots",
+                element:<HistoriqueDepots />
+            },
+            {
+                path:"transactionUtilisateur",
+                element:<TransactionUser />
             }
 
 
