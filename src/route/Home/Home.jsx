@@ -64,7 +64,7 @@ const lineData = {
                   title="Plastique Collecté Aujourd'hui"
                   value="250 kg"
                   color="orange"
-                  icon="/path/to/plastique_icon.png"
+                  icon="/icons/bouteille.png"
                 />
               </Col>
               <Col>
@@ -72,7 +72,7 @@ const lineData = {
                   title="Utilisateurs Actifs Aujourd'hui"
                   value="120"
                   color="green"
-                  icon="/path/to/utilisateurs_icon.png"
+                  icon="/icons/people.png"
                 />
               </Col>
               <Col>
