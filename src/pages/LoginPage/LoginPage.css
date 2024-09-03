@@ -1,0 +1,88 @@
+/* src/pages/LoginPage.css */
+.login-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .login-left {
+    flex: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .logo {
+    width: 150px; /* Ajuste la taille du logo selon tes besoins */
+    margin-bottom: 20px;
+  }
+  
+  .login-left p {
+    font-size: 18px;
+    color: #2e7d32; /* Couleur verte */
+    text-align: center;
+  }
+  
+  .login-right {
+    flex: 1;
+    background-color: #2e7d32; /* Couleur de fond verte */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  .login-form h2 {
+    margin-bottom: 20px;
+    color: #2e7d32; /* Couleur verte */
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .password-wrapper {
+    position: relative;
+  }
+  
+  .password-wrapper input {
+    width: calc(100% - 30px);
+    padding-right: 30px;
+  }
+  
+  .password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2e7d32; /* Couleur verte */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .login-form button:hover {
+    background-color: #1b5e20; /* Couleur verte foncée */
+  }
+  

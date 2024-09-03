@@ -1,0 +1,47 @@
+/* src/components/FullKiosks.css */
+.full-kiosks-container {
+    padding: 20px;
+  }
+  
+  .header {
+    background-color: #b71c1c; /* Rouge foncé pour kiosques pleins */
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .back-icon,
+  .trash-icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .search-bar {
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .kiosk-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .kiosk-item {
+    background-color: #ffffff;
+    border-left: 4px solid #b71c1c; /* Rouge foncé pour l'indicateur de statut */
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  

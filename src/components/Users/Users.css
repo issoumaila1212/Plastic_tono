@@ -1,0 +1,101 @@
+/* src/components/Users.css */
+.users-container {
+    padding: 20px;
+  }
+  
+  .users-header {
+    background-color: #2e7d32; /* Couleur verte */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .users-header h1 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .users-icon {
+    margin-right: 10px;
+  }
+  
+  .users-content {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .users-filter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .users-filter input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .users-filter select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .filter-button {
+    padding: 10px 15px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .filter-button:hover {
+    background-color: #e68900;
+  }
+  
+  .users-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .users-table th,
+  .users-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .users-table th {
+    background-color: #2e7d32;
+    color: white;
+  }
+  
+  .users-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .action-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #2e7d32;
+  }
+  
+  .action-button:hover {
+    color: #1b5e20;
+  }
+  
