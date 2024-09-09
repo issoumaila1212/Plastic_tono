@@ -1,88 +1,97 @@
-/* src/pages/LoginPage.css */
+/* Container for the entire login page */
 .login-container {
-    display: flex;
-    height: 100vh;
-  }
-  
-  .login-left {
-    flex: 1;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  .logo {
-    width: 150px; /* Ajuste la taille du logo selon tes besoins */
-    margin-bottom: 20px;
-  }
-  
-  .login-left p {
-    font-size: 18px;
-    color: #2e7d32; /* Couleur verte */
-    text-align: center;
-  }
-  
-  .login-right {
-    flex: 1;
-    background-color: #2e7d32; /* Couleur de fond verte */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .login-form {
-    background-color: white;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
-  }
-  
-  .login-form h2 {
-    margin-bottom: 20px;
-    color: #2e7d32; /* Couleur verte */
-  }
-  
-  .login-form input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .password-wrapper {
-    position: relative;
-  }
-  
-  .password-wrapper input {
-    width: calc(100% - 30px);
-    padding-right: 30px;
-  }
-  
-  .password-toggle {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-  }
-  
-  .login-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #2e7d32; /* Couleur verte */
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .login-form button:hover {
-    background-color: #1b5e20; /* Couleur verte foncée */
-  }
-  
+  display: flex;
+  height: 100vh;
+}
+
+/* Left section with the logo */
+.login-left {
+  flex: 1;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-left .logo {
+  max-width: 80%;
+  height: auto;
+}
+
+.login-left p {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+  color: #4d9a40;
+}
+
+/* Right section with the form */
+.login-right {
+  flex: 1;
+  background-color: #33691e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #fff;
+  font-size: 16px;
+  box-sizing: border-box; /* Assure que padding et bordures sont pris en compte dans la largeur */
+}
+
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-wrapper input {
+  padding-right: 40px; /* Ajoute de l'espace pour l'icône */
+}
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #FFA500; /* Couleur orange pour l'icône */
+  font-size: 1.2rem; /* Ajuster la taille de l'icône */
+}
+
+/* Button */
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  color: #33691e;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #f1f1f1;
+}

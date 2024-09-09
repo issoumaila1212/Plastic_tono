@@ -1,7 +1,9 @@
-// src/pages/LoginPage.js
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'; // Import des icônes
 import "./LoginPage.css";
+import logo from '../../assets/LOGO_PLASTIC.png';
 
 function LoginPage() {
   const [username, setUsername] = useState("");
@@ -13,9 +15,8 @@ function LoginPage() {
     e.preventDefault();
 
     // Logique d'authentification
-    // Pour l'instant, redirige vers le tableau de bord
     if (username === "admin" && password === "admin") {
-      navigate("/dashboard");
+      navigate("/dashboard"); // Redirection vers le dashboard
     } else {
       alert("Nom d'utilisateur ou mot de passe incorrect");
     }
@@ -24,7 +25,7 @@ function LoginPage() {
   return (
     <div className="login-container">
       <div className="login-left">
-        <img src="/path/to/logo.png" alt="Plastic Tôno" className="logo" />
+        <img src={logo} alt="Plastic Tôno" className="logo" />
         <p>Valorisez vos déchets plastiques</p>
       </div>
       <div className="login-right">
@@ -48,7 +49,8 @@ function LoginPage() {
                 className="password-toggle"
                 onClick={() => setShowPassword(!showPassword)}
               >
-                {showPassword ? "🙈" : "👁️"}
+                {/* Utilisation des icônes Font Awesome */}
+                <FontAwesomeIcon icon={showPassword ? faEyeSlash : faEye} />
               </span>
             </div>
             <button type="submit">Se connecter</button>
